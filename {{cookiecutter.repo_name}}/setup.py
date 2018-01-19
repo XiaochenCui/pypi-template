@@ -32,5 +32,13 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3 :: Only',
     ],
-    packages=find_packages(),
+
+    # This field adds keywords for your project which will appear on the
+    # project page. What does your project relate to?
+    #
+    # Note that this is a string of words separated by whitespace, not a list.
+    keywords='',  # Optional
+
+    install_requires=[],
+    packages=find_packages(exclude=['tests']),
 )
