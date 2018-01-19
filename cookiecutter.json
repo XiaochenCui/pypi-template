@@ -1,0 +1,7 @@
+{
+    "repo_name": "example",
+    "package_name": "{{cookiecutter.repo_name.replace('-', '_')}}",
+    "description": "example description",
+    "author": "Xiaochen Cui",
+    "email": "jcnlcxc.new@gmail.com"
+}
