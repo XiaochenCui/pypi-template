@@ -1,9 +1,19 @@
 language: python
+
 python:
   - "3.5"
   - "3.6"
+
+install:
+  - pip install -r requirements.txt
+
 script:
-  - python -m unittest -v
+  - flake8
+  - coverage run -m unittest -v
+
+after_success:
+  - codecov
+
 notifications:
   email: false
   slack: gimme-gimme-gimme:uY4HHVgymLh2iLILqZahaOPK
